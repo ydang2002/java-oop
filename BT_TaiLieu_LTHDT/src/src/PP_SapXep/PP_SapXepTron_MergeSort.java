@@ -131,5 +131,6 @@ If r > l
 		ob.sort(a, 0, a.length - 1);
 		ob.XuatMang(n, a);
 	}
-
+/*link tham khảo
+ * https://nguyenvanhieu.vn/thuat-toan-sap-xep-merge-sort/*/
 }

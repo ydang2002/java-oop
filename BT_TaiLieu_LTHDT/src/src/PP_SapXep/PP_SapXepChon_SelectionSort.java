@@ -77,5 +77,6 @@ arr[] = 62 24 15 22 1
 		ob.selectionSort(a,n);
 		ob.XuatMang(n, a);
 	}
-
+/*link tham khảo
+ * https://nguyenvanhieu.vn/thuat-toan-sap-xep-chon/*/
 }

@@ -140,5 +140,6 @@ Bước 4: Sử dụng sắp xếp nhanh một cách đệ qui với mảng con 
 		b.XuatMang(n,a);
 		
 	}
-
+/*link tham khao
+ * https://nguyenvanhieu.vn/thuat-toan-sap-xep-quick-sort/*/
 }
