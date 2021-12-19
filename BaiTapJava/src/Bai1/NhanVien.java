@@ -23,14 +23,16 @@ public class NhanVien extends CanBo {
 	@Override
 	public void nhapThongTin() {
 		super.nhapThongTin();
-		System.out.println(" cong Viec: " + congViec);
+		System.out.println("Nhap cong viec: ");
+		congViec = Nhap.sc.nextLine();
+		
 	}
 
 	@Override
 	public void xuatThongTin() {
 		super.xuatThongTin();
-		System.out.println("Nhap nganh cong viec: ");
-		congViec = Nhap.sc.nextLine();
+		System.out.println(" cong Viec: " + congViec);
+		
 	}
 	
 	 

@@ -10,6 +10,7 @@ public class Main {
 			System.out.println("1: Them can bo");
 			System.out.println("2: Tim can bo");
 			System.out.println("3: Xuat danh sach can bo");
+			System.out.println("4: xoa can bo");
 			System.out.println("0: Thoat");
 			String luaChon = Nhap.sc.nextLine();
 			switch(luaChon) {
@@ -23,6 +24,10 @@ public class Main {
 				}
 				case "3":{
 					qlcb.xuatDanhSach();
+					break;
+				}
+				case "4":{
+					qlcb.xoaCanBo();
 					break;
 				}
 				case "0":{

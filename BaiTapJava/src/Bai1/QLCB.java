@@ -49,10 +49,6 @@ public class QLCB {
 			}
 		}
 		
-	
-		/*CanBo cb = new CanBo();
-		cb.nhapThongTin();
-		this.danhSachCanBo.add(cb);*/
 	}
 	
 	//phuong thuc tim kiem theo họ ten
@@ -73,4 +69,78 @@ public class QLCB {
 		}
 	}
 	
+	public void xoaCanBo() {
+		System.out.print("Nhap  ho ten de xoa: ");
+        String hoTen = Nhap.sc.nextLine();
+        //Nếu chúng ta muốn giữ vòng lặp for-each, thì chúng ta cần đợi cho đến khi kết thúc trước khi chúng ta xóa các phần tử.
+        List<CanBo> toRemove = new ArrayList<>();
+		for(CanBo cb : danhSachCanBo) {
+			if(cb.getHoTen().equals(hoTen)) {
+				toRemove.add(cb);
+			}
+		}
+		danhSachCanBo.removeAll(toRemove);
+	
+	}
+	
+	/*public void suaCanBo() {
+		while(true) {
+			System.out.println("chon cac hinh thuc sau de sua thong tin");
+			System.out.println("1. Sua thong tin cong nhan");
+			System.out.println("2. Sua thong tin ky su");
+			System.out.println("3. Sua thong tin nhan vien ");
+			System.out.println("0.Thoat");
+			String luaChon = Nhap.sc.nextLine();
+			switch(luaChon) {
+				case "1":{
+					/*CongNhan cn = new CongNhan();*/
+					/*System.out.println("nhap ho ten de sua thong tin cong nhan: ");
+			        String hoTen = Nhap.sc.nextLine();
+			        CongNhan cn ;
+					for(CanBo cb : danhSachCanBo) {
+						if(cb.getHoTen().equals(hoTen)) {
+							cb.setTuoi
+						}
+						else {
+							System.out.println("khong sua thong tin thanh cong");
+						}
+					}
+					
+					break;
+				}
+				case "2":{
+					System.out.println("nhap ho ten de sua thong tin ky su: ");
+			        String hoTen = Nhap.sc.nextLine();
+					for(CanBo cb : danhSachCanBo) {
+						if(cb.getHoTen().equals(hoTen)) {
+							KySu ks = new KySu();
+							cb.setTuoi(ks.getTuoi());
+							cb.setGioiTinh(ks.getGioiTinh());
+							cb.setDiaChi(ks.getDiaChi());
+						}
+					}
+					break;
+				}
+				case "3":{
+					System.out.println("nhap ho ten de sua thong tin nhan vien: ");
+			        String hoTen = Nhap.sc.nextLine();
+					for(CanBo cb : danhSachCanBo) {
+						if(cb.getHoTen().equals(hoTen)) {
+							NhanVien nv = new NhanVien();
+							cb.setTuoi(nv.getTuoi());
+							cb.setGioiTinh(nv.getGioiTinh());
+							cb.setDiaChi(nv.getDiaChi());
+						}
+					}
+					break;
+				}
+				case "0": {
+					return;
+				}
+			default:
+				System.out.println("vui long nhap đung lua chon");
+			}
+		}
+		
+	}*/
 }
