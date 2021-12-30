@@ -1,5 +1,4 @@
-package Bai1;
-
+package BaiThi;
 public class Main {
 	public static void main(String[] args) {
 		
@@ -51,7 +50,7 @@ public class Main {
 				}
 					
 				default :
-				System.out.println("vui long chon đung hinh thuc");
+				System.out.println("vui long chon ?ung hinh thuc");
 			}
 		}
 

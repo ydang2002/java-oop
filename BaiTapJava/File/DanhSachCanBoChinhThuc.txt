@@ -1,0 +1,2 @@
+1;Nguyễn Văn Vương;23;Nam;Hà Nội;2500000 VND;Kĩ thuật điện;Tren 10 nam
+2;Võ Thị Hương;21;Nữ;Thành Phố Hồ Chí Minh;1500000;Kĩ Thuật ô tô;Duoi 10 nam

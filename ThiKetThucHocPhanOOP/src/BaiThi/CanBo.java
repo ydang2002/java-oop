@@ -1,6 +1,5 @@
-package Bai1;
-
- abstract class CanBo {
+package BaiThi;
+abstract class CanBo {
 	static  int dem = 0;
 	public int thuTu;
 	public String hoTen;

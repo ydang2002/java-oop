@@ -1,12 +1,16 @@
 package Bai1;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.*;
 
-import java.util.*;  
+import jdk.incubator.vector.VectorOperators.Test;
 
-public class QLCB {
-	public List<CanBo> danhSachCanBo;
-	
-	
-	public QLCB() {
+
+public class QuanLiCanBo implements QuanLiCanBoChinhThuc {
+	public ArrayList<CanBo> danhSachCanBo;
+		
+	public QuanLiCanBo() {
 		this.danhSachCanBo = new ArrayList<>();
 	}
 	
@@ -83,53 +87,54 @@ public class QLCB {
 	
 	}
 	
-	/*public void suaCanBo() {
+	public void suaCanBo() {
+		System.out.print("moi ban nhap ten de sua: ");
+        String hoTen = Nhap.sc.nextLine();
+		for(CanBo cb : danhSachCanBo) {
+			if(cb.getHoTen().equals(hoTen)) {
+				cb.nhapThongTin();
+				break;
+			}
+			else {
+				System.out.println("KHONG CO TEN BAN VUA NHAP, MOI BAN NHAP LAI");
+			}
+		}
+	}
+	
+	public void TinhLuongCanBo() {
 		while(true) {
-			System.out.println("chon cac hinh thuc sau de sua thong tin");
-			System.out.println("1. Sua thong tin cong nhan");
-			System.out.println("2. Sua thong tin ky su");
-			System.out.println("3. Sua thong tin nhan vien ");
-			System.out.println("0.Thoat");
+			System.out.println("chon cac hinh thuc sau");
+			System.out.println("1. Tinh luong cong nhan");
+			System.out.println("2. Tinh luong ky su");
+			System.out.println("3. Tinh luong nhan vien");
+			System.out.println("0. Thoat");
 			String luaChon = Nhap.sc.nextLine();
+			
 			switch(luaChon) {
 				case "1":{
-					/*CongNhan cn = new CongNhan();*/
-					/*System.out.println("nhap ho ten de sua thong tin cong nhan: ");
-			        String hoTen = Nhap.sc.nextLine();
-			        CongNhan cn ;
-					for(CanBo cb : danhSachCanBo) {
-						if(cb.getHoTen().equals(hoTen)) {
-							cb.setTuoi
-						}
-						else {
-							System.out.println("khong sua thong tin thanh cong");
+					
+					for(CanBo cb: danhSachCanBo) {
+						if(cb instanceof CongNhan) {
+						cb.tinhLuong(20000000, 10000000, 200000);
+						cb.xuatThongTinLuong();
 						}
 					}
-					
-					break;
+					  break;
 				}
 				case "2":{
-					System.out.println("nhap ho ten de sua thong tin ky su: ");
-			        String hoTen = Nhap.sc.nextLine();
-					for(CanBo cb : danhSachCanBo) {
-						if(cb.getHoTen().equals(hoTen)) {
-							KySu ks = new KySu();
-							cb.setTuoi(ks.getTuoi());
-							cb.setGioiTinh(ks.getGioiTinh());
-							cb.setDiaChi(ks.getDiaChi());
+					for(CanBo cb: danhSachCanBo) {
+						if(cb instanceof KySu) {							
+							cb.tinhLuong(25000000, 15000000);
+							cb.xuatThongTinLuong();						
 						}
 					}
 					break;
 				}
 				case "3":{
-					System.out.println("nhap ho ten de sua thong tin nhan vien: ");
-			        String hoTen = Nhap.sc.nextLine();
-					for(CanBo cb : danhSachCanBo) {
-						if(cb.getHoTen().equals(hoTen)) {
-							NhanVien nv = new NhanVien();
-							cb.setTuoi(nv.getTuoi());
-							cb.setGioiTinh(nv.getGioiTinh());
-							cb.setDiaChi(nv.getDiaChi());
+					for(CanBo cb: danhSachCanBo) {
+						if(cb instanceof NhanVien) {							
+							cb.tinhLuong(27000000, 18000000, 100, 500000);
+							cb.xuatThongTinLuong();							
 						}
 					}
 					break;
@@ -142,5 +147,32 @@ public class QLCB {
 			}
 		}
 		
-	}*/
+	}
+	
+	public void DoccDanhSachCanBoChinhThuc() {
+		
+        try {
+        	File dir = new File("File");
+        	if(!dir.exists()) {
+        		dir.mkdir();
+        	}
+        	
+        	File file = new File("File/DanhSachCanBoChinhThuc.txt");
+        	if(!file.exists()) {
+        		file.createNewFile();
+        	}
+        	
+            FileReader fr = new FileReader(file);           
+            int c= fr.read();;
+            while (c != -1) {
+            	System.out.print((char)c);
+                c = fr.read();            
+            } 
+            fr.close();
+        } catch (Exception e) {
+           
+        }
+		
+    }
+	
 }

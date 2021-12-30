@@ -1,6 +1,4 @@
-package Bai1;
-
-
+package BaiThi;
 public class NhanVien extends CanBo {
 	public String congViec;
 	private int luaChon;

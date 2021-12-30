@@ -1,7 +1,10 @@
 eclipse.preferences.version=1
 encoding//src/Bai1/CanBo.java=UTF-8
+encoding//src/Bai1/CongNhan.java=UTF-8
 encoding//src/Bai1/Main.java=UTF-8
-encoding//src/Bai1/QLCB.java=UTF-8
+encoding//src/Bai1/NhanVien.java=UTF-8
+encoding//src/Bai1/QuanLiCanBo.java=UTF-8
+encoding//src/Bai2/Nhap.java=UTF-8
 encoding//src/Bai2/QuanLySach.java=UTF-8
 encoding//src/bookstoresimple/Author.java=UTF-8
 encoding//src/bookstoresimple/BooksManager.java=UTF-8

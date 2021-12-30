@@ -36,7 +36,7 @@ public class InfoStaff extends Data {
 
     public void readInfoStaff() {
         try {
-            FileReader fr = new FileReader("danhsachnhanvien.txt");
+            FileReader fr = new FileReader("ttt.txt");
             BufferedReader br = new BufferedReader(fr);
             String line = "";
             while (true) {

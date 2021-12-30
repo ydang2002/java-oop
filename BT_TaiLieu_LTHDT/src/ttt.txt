@@ -1,0 +1,2 @@
+Nguyen Van A, MKT001, MKT, 20, 09/04/2001, Nam, 5000
+Tran Trong B, MKT002, MKT, 22, 13/04/1999, Nam, 4000

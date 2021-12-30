@@ -1,5 +1,4 @@
-package Bai1;
-
+package BaiThi;
 public class KySu extends CanBo {
 	public String nganhDaoTao;
 	private int luaChon;

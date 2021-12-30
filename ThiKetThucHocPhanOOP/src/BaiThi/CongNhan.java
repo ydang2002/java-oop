@@ -1,6 +1,4 @@
-package Bai1;
-
-
+package BaiThi;
 public class CongNhan extends CanBo {
 	public String capBac;
 	public int soNgayLamThem;
