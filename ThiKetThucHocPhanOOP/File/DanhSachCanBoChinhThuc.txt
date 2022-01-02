@@ -1,0 +1,2 @@
+1; Nguyen Van Vuong; 28; Nam; Ha Noi; 25000000 VND; Ki thuat dien; tren 10 nam
+2; Vo Thi Huong; 26; Nu; Da Nang; 20000000 VND; Ki thuat o to; Duoi 10 nam
