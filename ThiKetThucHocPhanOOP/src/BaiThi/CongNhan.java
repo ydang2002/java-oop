@@ -60,7 +60,7 @@ public class CongNhan extends CanBo {
 	@Override
 	public void xuatThongTinLuong() {
 		super.xuatThongTinLuong();
-		System.out.println("cap bac: " + ", so ngay lam them:" + soNgayLamThem + ", loai cong nhan: " + loaiCanBo + " ]" );
+		System.out.println("cap bac: " + capBac + ", so ngay lam them:" + soNgayLamThem + ", loai cong nhan: " + loaiCanBo + " ]" );
 	}
 	
 }

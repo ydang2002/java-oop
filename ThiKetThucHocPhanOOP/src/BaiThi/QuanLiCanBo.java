@@ -48,7 +48,7 @@ public class QuanLiCanBo implements QuanLiCanBoChinhThuc {
 					return;
 				}
 			default:
-				System.out.println("vui long nhap ?ung lua chon");
+				System.out.println("vui long nhap dung lua chon");
 				
 			}
 		}
@@ -115,7 +115,7 @@ public class QuanLiCanBo implements QuanLiCanBoChinhThuc {
 					
 					for(CanBo cb: danhSachCanBo) {
 						if(cb instanceof CongNhan) {
-						cb.tinhLuong(20000000, 10000000, 200000);
+						cb.tinhLuong(20000000, 10000000, 300000);
 						cb.xuatThongTinLuong();
 						}
 					}
@@ -133,7 +133,7 @@ public class QuanLiCanBo implements QuanLiCanBoChinhThuc {
 				case "3":{
 					for(CanBo cb: danhSachCanBo) {
 						if(cb instanceof NhanVien) {							
-							cb.tinhLuong(27000000, 18000000, 100, 500000);
+							cb.tinhLuong(27000000, 18000000, 100000, 500000);
 							cb.xuatThongTinLuong();							
 						}
 					}
@@ -143,7 +143,7 @@ public class QuanLiCanBo implements QuanLiCanBoChinhThuc {
 					return;
 				}
 			default:
-				System.out.println("vui long nhap ?ung lua chon");
+				System.out.println("vui long nhap dung lua chon");
 			}
 		}
 		
